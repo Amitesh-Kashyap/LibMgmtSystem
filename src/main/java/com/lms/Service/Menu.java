@@ -11,7 +11,42 @@ public class Menu
     {
         if(role == 1001)
         {
-            System.out.println("Select what to you want to do :-\n1. Add Student\n2. Remove Student\n3. Add Book\n4. Remove Book\n5. View Students Database\n6. Fun with uploading file");
+            while(true)
+            {
+                System.out.println("Select what to you want to do :-\n1. Add Student\n2. Remove Student\n3. Add Book\n4. Remove Book\n5. View Students Database\n6. Fun with uploading file");
+                int choice = new Scanner(System.in).nextInt();
+                if(choice > 6 || choice < 1)
+                {
+                    System.out.println("\n Wrong Inputs! Try again!");
+                    continue;
+                }
+                else if(choice == 1)
+                {
+
+                }
+                else if(choice == 2)
+                {
+
+                }
+                else if(choice == 3)
+                {
+
+                }
+                else if(choice == 4)
+                {
+
+                }
+                else if(choice == 5)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
+
+            
         }
         else if(role == 2002)
         {
@@ -24,7 +59,7 @@ public class Menu
     public void displayMainMenu(Data db)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome to Library Management System");
+        System.out.println("\n---------------- Welcome to Library Management System ---------------------\n");
         while(true)
         {
             System.out.print("Press :\n1 - New User\n2 - Login\n3 - Exit\nEnter choice : ");
@@ -43,24 +78,23 @@ public class Menu
                         int role = Login.ExistingUserLogin(db , id);
                         if(role == 1001)
                         {
-                            System.out.println("Welcome Admin! Here are the list of functionalities you get : ");
+                            System.out.println("\nWelcome Admin! Here are the list of functionalities you get : ");
                         }
                         else if(role == 2002)
                         {
-                            System.out.println("Welcome Student! Here are the list of functionalities you get : ");
+                            System.out.println("\nWelcome Student! Here are the list of functionalities you get : ");
                         }
                         else
                         {
-                            System.out.println("Invalid UserID");
+                            System.out.println("\nInvalid UserID\n");
                         }
                         displayFunctions(role);
                         if(role!=-1)    break;
-                        System.out.println("\n\n");
                     }while(true); 
                     System.out.println("\n--------------------- Returning to Main Menu ------------------\n");
                     break;
                     case 3:
-                    System.out.println("Bye! Visit Again!");
+                    System.out.println("\nBye! Visit Again!");
                     System.out.println("\n--------------------- Returning to Main Menu ------------------\n");
                     break;
                     default:

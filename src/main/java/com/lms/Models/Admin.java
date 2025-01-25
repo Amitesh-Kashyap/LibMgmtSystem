@@ -8,7 +8,7 @@ public class Admin extends User
         setID(ID);
         setDeleted(false);
     }
-
+    @Override
     public void getRole()
     {
         System.out.println("Admin");

@@ -15,26 +15,26 @@ public class Register
         System.out.print("Enter your name : ");
         sc.nextLine();
         String name = sc.nextLine();
-        System.out.print("Enter which role you want to apply for!\n\n**If registering as Admin - Keep Passkey handy!\n\n1 - Admin\nOther - Student\nYour choice : ");
+        System.out.print("\nEnter which role you want to apply for!\n\n**If registering as Admin - Keep Passkey handy!\n\n1 - Admin\nOther - Student\n\nYour choice : ");
         int role = sc.nextInt();
         if(role == 1)
         {
             // ID must be generated if he has the proper passkey
             do
             {
-                System.out.print("Enter the passkey given only to admins : ");
+                System.out.print("\nEnter the passkey given only to admins : ");
                 String passkey = sc.next();
                 if(Passwords.check_Passkey(passkey))
                 {
                     String generated_ID = Generate.generate_ID();
                     Admin ob = new Admin(name , generated_ID);
-                    System.out.println("Admin succesfully registered!\nRemember this ID for future all-time logins : " + generated_ID);
+                    System.out.println("\nAdmin succesfully registered!\nRemember this ID for future all-time logins : " + generated_ID);
                     db.addUser(ob);
                     break;
                 }
                 else
                 {
-                    System.out.println("Wrong Passkey! Are you really an admin? Try again.");
+                    System.out.println("\n!!! Wrong Passkey! Are you really an admin? Try again.\n");
                 }
             }
             while(true);
