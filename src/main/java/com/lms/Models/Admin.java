@@ -1,4 +1,4 @@
-package LibMgmtSystem.src.main.java.com.lms.Models;
+package com.lms.Models;
 
 public class Admin extends User
 {

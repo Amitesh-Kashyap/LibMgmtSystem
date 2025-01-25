@@ -1,10 +1,10 @@
-package LibMgmtSystem.src.main.java.com.lms.Database;
+package com.lms.Database;
 
 import java.util.ArrayList;
 
-import LibMgmtSystem.src.main.java.com.lms.Models.Admin;
-import LibMgmtSystem.src.main.java.com.lms.Models.Book;
-import LibMgmtSystem.src.main.java.com.lms.Models.Student;
+import com.lms.Models.Admin;
+import com.lms.Models.Book;
+import com.lms.Models.Student;
 
 
 public class Data

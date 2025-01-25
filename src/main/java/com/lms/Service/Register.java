@@ -1,12 +1,12 @@
-package LibMgmtSystem.src.main.java.com.lms.Service;
+package com.lms.Service;
 
 import java.util.Scanner;
 
-import LibMgmtSystem.src.main.java.com.lms.Database.Data;
-import LibMgmtSystem.src.main.java.com.lms.Models.Admin;
-import LibMgmtSystem.src.main.java.com.lms.Models.Student;
-import LibMgmtSystem.src.main.java.com.lms.Security.Generate;
-import LibMgmtSystem.src.main.java.com.lms.Security.Passwords;
+import com.lms.Database.Data;
+import com.lms.Models.Admin;
+import com.lms.Models.Student;
+import com.lms.Security.Generate;
+import com.lms.Security.Passwords;
 
 public class Register
 {

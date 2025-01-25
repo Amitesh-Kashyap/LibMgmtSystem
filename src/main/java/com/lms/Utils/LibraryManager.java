@@ -1,7 +1,7 @@
-package LibMgmtSystem.src.main.java.com.lms.Utils;
+package com.lms.Utils;
 
-import LibMgmtSystem.src.main.java.com.lms.Database.Data;
-import LibMgmtSystem.src.main.java.com.lms.Service.Menu;
+import com.lms.Database.Data;
+import com.lms.Service.Menu;
 
 public class LibraryManager
 {

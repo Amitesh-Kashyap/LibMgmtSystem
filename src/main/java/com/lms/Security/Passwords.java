@@ -1,4 +1,4 @@
-package LibMgmtSystem.src.main.java.com.lms.Security;
+package com.lms.Security;
 
 public class Passwords
 {

@@ -1,6 +1,6 @@
-package LibMgmtSystem.src.main.java.com.lms.Service;
+package com.lms.Service;
 
-import LibMgmtSystem.src.main.java.com.lms.Database.Data;
+import com.lms.Database.Data;
 
 public class Login
 {
